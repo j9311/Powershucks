@@ -1,2 +1,2 @@
 # Powershucks
-p-shell
+p-shell scripting uses
