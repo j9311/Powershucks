@@ -1,0 +1,28 @@
+PS C:\Users\ahab\desktop> for ($i =1; $i -le 5; $i++){
+>> $u= "".PadLeft($i,"u")
+>> $unum = "u$i"
+>> $d = $u.Replace("u","../")
+>> Invoke-Expression "function $u { push-location $d}"
+>> Invoke-Expression "function $unum { push-location $d }"
+>> }
+PS C:\Users\ahab\desktop> ls
+
+
+    Directory: C:\Users\ahab\desktop
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----          6/5/2021  10:04 AM                Sun
+d-----         5/24/2021  11:10 PM                Tor Browser
+-a----          6/3/2021   7:22 PM           2224 Discord.lnk
+-a----         5/24/2021   7:53 PM       72663672 torbrowser-install-wi
+                                                  n64-10.0.16_en-US.exe
+
+
+PS C:\Users\ahab\desktop> cd sun
+PS C:\Users\ahab\desktop\sun> u2
+PS C:\Users\ahab> cd desktop
+PS C:\Users\ahab\desktop> cd sun
+PS C:\Users\ahab\desktop\sun> uu
+PS C:\Users\ahab>
